@@ -1,0 +1,39 @@
+IBM sterling order management:
+	
+	IBM sterling order management manages the complexities of business models serving buyers that uses multiple 
+	channels and those supporting multiple fulfillment processes simultaneously.
+	
+IBM sterling order management consists of the following applications:
+
+1. Distributed order management.
+2. Inventory visibility.
+3. Catalog management.
+4. Logistics management.
+5. Supply collaboration.
+6. Reverse logistics.
+7. Application platform.
+
+
+Order management:
+				Order management involves tracking and processing of orders,from inception to fulfillment.
+				It also manages the people, processes and the data that is connected to the order as it moves
+				through the order lifecycle.
+
+The order lifecycle includes:
+
+1. Inventory availibilty: Verification that inventory is available for a product or service.
+
+2. Order created: Orders are created across a range of possible channels such as web, mobile, call center, store,
+				marketplaces, procurement systems, and others.
+				
+3. Order verification: A person or system verifies order initiation, and collects data related to the order.
+
+4. Service availibilty: This includes appointment scheduling, installation, delivery service, exchanges and return.
+
+5. Inventory promising: A system or a person commits the product or service to the order.
+
+6. Order fulfillment: The promised order inventory is dispatched through a distribution channel for shipping, 
+					pickup,	service, or digital fulfillment.
+					The status of fulfillment process is managed and tracked through the confirmation of fulfillment
+					completion.
+				

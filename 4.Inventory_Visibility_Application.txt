@@ -1,0 +1,64 @@
+Inventory Visibility Application:
+
+The Inventory Visibility application is a system designed to give businesses a unified view of their inventory 
+across multiple locations (Sites), organizations (Enterprises), and collaborators (Participants). 
+This ensures inventory tracking and management are efficient and accurate, whether the inventory is at internal 
+warehouses, retail stores, or external partner facilities like supplier warehouses or third-party logistics 
+providers (Ship Nodes).
+
+Example:
+Business Context
+A company, Global Retail Co., operates:
+
+a. Multiple Sites: Warehouses in New York, Los Angeles, and Chicago.
+b. Enterprises: Two brands, one for electronics and another for furniture.
+c. Participants: External suppliers and third-party logistics providers.
+
+The company uses the Inventory Visibility application to:
+
+a. Track inventory levels across all their locations, including supplier stock.
+b. Manage demand and supply to ensure orders are fulfilled efficiently.
+c. Quickly identify and resolve inventory shortages.
+
+How It Works:
+
+Real-Time Inventory Availability
+
+1. The application synchronizes inventory data from:
+
+a. Demand: Sales Orders, Reservations, Forecasts.
+b. Supply: Stock on hand, In-transit inventory, Purchase Orders.
+
+For instance:
+
+A customer orders a laptop on the company's e-commerce site.
+The application checks stock availability across all sites (e.g., New York Warehouse has 10 laptops, and a 
+supplier has 20 ready to ship).
+It immediately reflects the availability on the website, allowing the customer to place the order.
+
+
+2. Identifying Shortages
+If demand exceeds supply at a location, the system flags a shortage.
+
+Example:
+
+A customer places an order for 15 laptops, but the New York Warehouse has only 10.
+The system detects a shortage of 5 laptops and notifies the inventory planner.
+Resolving Shortages
+The inventory planner can resolve the issue by:
+
+3. Allocating Sales Orders:
+Assigning the remaining 5 laptops to be fulfilled from the supplier stock.
+
+4. Executing Purchase Orders:
+Raising a new Purchase Order for 10 laptops from the supplier to replenish stock.
+
+5. Moving Inventory:
+Transferring 5 laptops from the Los Angeles Warehouse to the New York Warehouse.
+
+
+Benefits to Global Retail Co.:
+
+a. Real-Time Insights: The system provides an accurate view of inventory across all locations.
+b. Efficient Operations: Inventory planners can quickly address shortages and balance stock.
+c. Customer Satisfaction: Orders are fulfilled on time without unnecessary delays.

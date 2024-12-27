@@ -1,0 +1,69 @@
+Order Fulfillment Lifecycle:
+
+IBM Sterling includes all the activities from draft order to shipped order. 
+
+An order document(contains information about the order like ordr id, address, payment information etc)
+can be a sales order or service order. (sales order are for items ordered, service order is 
+for services like repair, installation etc.) 
+
+Different stages of Order Fulfillment Lifecycle are:
+
+1. Draft order state: Orders are created through one of channels such as web, call center, or store.
+					The Draft order is the first stage of the order until it is confirmed.
+					An order can be modified until it is confirmed.
+					
+Example: A customer is shopping on an e-commerce website and adds a smartphone and accessories to their cart. 
+They enter their shipping address and payment details but haven't clicked "Place Order" yet. 
+The system treats this as a draft order, which can still be modified or canceled.
+
+
+2. Created order state: After the order is confirmed, the order status moves to the Created state.
+						The Distributed Order Management application picks up the order for fulfillment when 
+						the order is in the Created status. At this stage, the order contains all the necessary
+						information that is needed to process, such as the customer address, order lines 
+						(containing items and the required quantity), and the payment information.
+						
+Example: Once the customer confirms their order for the smartphone and accessories, the order moves to the
+		Created state. The system now knows the exact items to fulfill, the delivery address, and
+		payment confirmation.
+
+
+3. Scheduled state: The order moves to the Scheduled state once the system determines which fulfillment location
+					(Node) has the required inventory or service capacity.
+					The system applies scheduling rules (e.g., selecting the closest warehouse or store) to 
+					assign inventory and set a delivery date.
+					The delivery date is communicated to the customer. 
+					After the delivery date is applied, the order marked as Scheduled.
+
+Example: The system identifies that the smartphone is available at a warehouse in California and assigns the 
+		inventory for fulfillment. The customer is informed that the expected delivery date is in 3 days.
+		At this stage, the order is in the Scheduled state.
+
+	
+4. Released state: After the inventory assignment is finalized, the order is released to the fulfillment node 
+					(e.g., a warehouse or store). The node may also handle additional services, like adding a
+					gift wrap, kitting, or labeling.
+					
+Example: The system sends an instruction to the California warehouse to pick, pack, and prepare the smartphone
+		for shipment. If the customer requested a gift wrap, the warehouse includes it at this stage. 
+		The order is now in the Released state.
+
+5. Send to node state: At this stage, the order release details are transmitted to the designated node. 
+					This is often the formal communication step between the central OMS and the fulfillment center.
+					
+
+Example: The system sends a release document to the California warehouse system with specific instructions to 
+		fulfill the order, including the shipment method and packaging requirements.
+
+
+6. Shipped state: The order is shipped to the customer from a specific node. The Node that is selected for order 
+				fulfillment creates the shipment for the order. Based on the mode of fulfillment - delivery,
+				shipping, or pick up, the Node fulfills the order. After the order is shipped to the customer, 
+				the order is marked as Shipped.
+
+
+Example: The California warehouse ships the smartphone and accessories via a courier service like FedEx. 
+		The tracking details are generated and shared with the customer. At this point, the order status is 
+		updated to Shipped.
+
+
